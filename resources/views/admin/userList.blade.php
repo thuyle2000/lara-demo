@@ -13,6 +13,10 @@
     <div class="container">
         <h3>List of Users</h3>
 
+        @if (session('message'))
+        <span style="display: block; color:red">{{session('message')}}</span>
+        @endif
+
         <h5><a href="{{ url('admin/displayAddUser') }}">Create New User </a></h5>
 
         <table class="table table-hover table-striped">

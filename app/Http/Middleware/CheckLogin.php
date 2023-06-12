@@ -13,16 +13,23 @@ class CheckLogin
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    
+
     // public function handle(Request $request, Closure $next): Response
     // {
     //     return $next($request);
     // }
 
-    public function handle(Request $request, Closure $next): Response
+    public function handle(Request $request, Closure $next, ...$roles): Response
     {
         if ($request->session()->has('user')) {
-            return $next($request);
+
+            $user = $request->session()->get('user');
+            // dd($roles); // echo + exit
+            
+            $r = $user->role == 1 ? "admin" : "user";
+            if (in_array($r, $roles)) {
+                return $next($request);
+            }
         }
         return redirect('login');
     }

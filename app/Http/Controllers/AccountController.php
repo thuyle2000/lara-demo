@@ -26,7 +26,6 @@ class AccountController extends Controller
             session(['user' => $user]);
             // return redirect('login')->with('message', "Welcome Mr/Ms  $user->fullname !");
 
-
             //phan nhanh chuc nang theo middleware
             if ($user->role == 1) {
                 // return redirect('admin/users');

@@ -20,6 +20,7 @@ use App\Http\Controllers\AccountController;
 
 Route::get('/login',[AccountController::class,'login']);
 Route::post('/checkLogin',[AccountController::class,'authenticate']);
+
 Route::get('logout',  [AccountController::class, 'logout']);
 
 Route::prefix('admin')->name('admin')->middleware('checkLogin:admin')->group(function() {

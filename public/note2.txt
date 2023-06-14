@@ -1,0 +1,20 @@
+1/ Tutorials & examples
+- Laravel 9 Rest API CRUD Example Tutorial
+https://www.tutsmake.com/laravel-9-rest-api-crud-example-tutorial/
+
+- How to Build a Rest API with Laravel: A Beginners Guide
+https://www.iankumu.com/blog/laravel-rest-api/
+
+- Getting Started with Laravel 9 Secured REST API:
+https://dev.to/techtoolindia/getting-started-with-laravel-9-secured-rest-api-390g
+
+- Laravel 8: Create REST API in Laravel
+https://magecomp.com/blog/laravel-8-create-application-programing-interface/
+
+
+
+
+2/ Eloquent: API Resources
+https://laravel.com/docs/10.x/eloquent-resources
+
+3/ Postman: Create A REST API with PHP And Laravel: https://quickstarts.postman.com/guide/php-laravel-API/index.html?index=..%2F..index#0
